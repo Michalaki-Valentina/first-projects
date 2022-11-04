@@ -1,56 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="gallery.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
-  <title>Dog Photo Gallery</title>
-</head>
-<body>
-  <div class="title">
-   <h1>Bilbo's Pictures</h1>
-   <p>He is going on an adventure...</p>
-  </div>
-  <div class="photo-gallery">
-    <div class="img-wrapper">
-      <img src="photos/1.jpeg" alt="sleepy-dog"/>
-      <div class="mask"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dog Photo Gallery</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Bilbo's Pictures</h1>
+      <p>He is going on an adventure...</p>
     </div>
-    
-    <div class="img-wrapper">
-      <img src="photos/2.jpeg" alt="blanket on top of his head"/>
-      <div class="mask"></div>
+
+    <!-- MODAL -->
+
+    <div class="modal-container" id="modal-container">
+      <div class="modal" id="modal">
+        <div class="close">&times;</div>
+        <div class="modal-content">
+          <img id="img-1" />
+        </div>
+      </div>
     </div>
-    
-    <div class="img-wrapper">
-      <img src="photos/3.jpeg" alt="in the blanket looking at the camera"/>
-      <div class="mask"></div>
+    <!-- END-MODAL -->
+
+    <div class="photo-gallery">
+      <div class="img-wrapper">
+        <img class="img" src="photos/1.jpeg" alt="sleepy-dog" />
+        <div class="mask" onclick="myFunction()">Click me!</div>
+      </div>
+
+      <div class="img-wrapper">
+        <img class="img" src="photos/2.jpeg" alt="blanket on top of his head" />
+        <div class="mask" onclick="myFunction()">Click me!</div>
+      </div>
+
+      <div class="img-wrapper">
+        <img
+          class="img"
+          src="photos/3.jpeg"
+          alt="in the blanket looking at the camera"
+        />
+        <div class="mask" onclick="myFunction()">Click me!</div>
+      </div>
+
+      <div class="img-wrapper">
+        <img class="img" src="photos/4.jpeg" alt="scared of the armchair" />
+        <div class="mask" onclick="myFunction()">Click me!</div>
+      </div>
+
+      <div class="img-wrapper">
+        <img
+          class="img"
+          src="photos/5.jpeg"
+          alt="sleep with his foot on the eyes"
+        />
+        <div class="mask" onclick="myFunction()">Click me!</div>
+      </div>
+
+      <div class="img-wrapper">
+        <img class="img" src="photos/6.jpeg" alt="sleepy-bilbo" />
+        <div class="mask" onclick="myFunction()">Click me!</div>
+      </div>
     </div>
-    
-    <div class="img-wrapper">
-      <img src="photos/4.jpeg" alt="scared at the armchair"/>
-      <div class="mask"></div>
-    </div>
-    
-    <div class="img-wrapper">
-      <img src="photos/5.jpeg" alt="sleep with his foot on the eyes"/>
-      <div class="mask"></div>
-    </div>
-    
-    <div class="img-wrapper">
-      <img src="photos/6.jpeg" alt="sleepy-bilbo"/>
-      <div class="mask"></div>
-    </div> 
-    
-  </div>
-  <footer>
-    <div class="footer">
-      <h3>@created by Valentina Michalaki</h3>
-    </div>
-  </footer>
-</body>
+    <footer>
+      <div class="footer">
+        <h3>@created by Valentina Michalaki</h3>
+      </div>
+      <!-- <script>
+        function myFunction() {
+          document.getElementsByClassName("modal-container");
+        }
+      </script> -->
+    </footer>
+  </body>
 </html>
